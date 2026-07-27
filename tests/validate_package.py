@@ -374,6 +374,15 @@ def validate_plugin_manifest(root: Path, report: Report) -> str | None:
                 ".codex-plugin/plugin.json: interface.displayName must be "
                 f"'{DISPLAY_NAME}'"
             )
+        short_description = interface.get("shortDescription")
+        if (
+            not isinstance(short_description, str)
+            or not 10 <= len(short_description) <= 30
+        ):
+            report.error(
+                ".codex-plugin/plugin.json: interface.shortDescription must be "
+                "10-30 characters"
+            )
         prompts = interface.get("defaultPrompt")
         if (
             not isinstance(prompts, list)

@@ -195,11 +195,13 @@ You can also clone or download the repository, open a terminal in its folder and
 For a manual Codex installation:
 
 1. Copy the entire `skills/essay-writer` folder.
-2. Paste it inside your Codex skills folder.
+2. Paste it inside your user Agent Skills folder.
 3. Confirm the final path is:
-   - macOS or Linux: `~/.codex/skills/essay-writer/SKILL.md`
-   - Windows: `%USERPROFILE%\.codex\skills\essay-writer\SKILL.md`
+   - macOS or Linux: `~/.agents/skills/essay-writer/SKILL.md`
+   - Windows: `%USERPROFILE%\.agents\skills\essay-writer\SKILL.md`
 4. Start a new Codex task so it can discover the skill.
+
+Some existing Codex installations also recognise the legacy `~/.codex/skills` location. Use `.agents/skills` for a new portable installation unless your installed Codex documentation says otherwise.
 
 Then try:
 

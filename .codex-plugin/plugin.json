@@ -20,7 +20,7 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Essay Writer & Editor",
-    "shortDescription": "Plan, draft, edit, and review stronger essays",
+    "shortDescription": "Write and improve essays",
     "longDescription": "Write an essay from a topic, brief, notes, rubric, or supplied sources; revise an existing draft; research competing evidence; or review probable AI-writing signals with clear uncertainty.",
     "developerName": "shimellism-eng",
     "category": "Productivity",
