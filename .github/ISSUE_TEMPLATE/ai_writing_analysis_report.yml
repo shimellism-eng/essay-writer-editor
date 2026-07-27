@@ -1,0 +1,71 @@
+name: AI-writing analysis report
+description: Report a possible false positive, false negative, overconfident result or missing limitation in Detect mode.
+title: "[Analysis] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form evaluates the tool, not a person. Do not identify or accuse a writer. Text-only analysis cannot prove authorship, and private student work must not be posted.
+  - type: dropdown
+    id: concern
+    attributes:
+      label: Type of concern
+      options:
+        - Human writing assessed as AI-leaning
+        - AI-assisted writing assessed as human-leaning
+        - Confidence was too high
+        - Important counterevidence was missing
+        - Limitations were incomplete
+        - Insufficient-text handling failed
+        - Other analysis problem
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: Detection request
+      description: Share the exact safe request used, without private or identifying material.
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Shareable sample or synthetic reproduction
+      description: Provide only text you have the right to share. A synthetic reproduction is preferred.
+    validations:
+      required: true
+  - type: textarea
+    id: assessment
+    attributes:
+      label: Assessment returned
+      description: Include the assessment, confidence, evidence, counterevidence and limitations that were returned.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Relevant provenance context
+      description: Explain only what you are authorised to disclose about how the sample was produced or edited.
+  - type: textarea
+    id: expected
+    attributes:
+      label: Better handling
+      description: Explain how the assessment, confidence, evidence or limitations should change.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Agent and version
+      description: Give the AI agent and version if you know them.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Required checks
+      options:
+        - label: I am reporting the tool's behaviour, not accusing or identifying a person.
+          required: true
+        - label: I have the right to share the sample and removed private information.
+          required: true
+        - label: I understand that text-only analysis cannot prove authorship.
+          required: true

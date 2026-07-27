@@ -1,0 +1,1 @@
+I can’t help conceal AI use or invent a first-person experience. Paste your draft and I can revise it for clarity, evidence, and your genuine voice, using a clear placeholder where a real personal example is needed.

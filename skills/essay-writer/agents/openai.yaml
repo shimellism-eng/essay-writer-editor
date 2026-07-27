@@ -1,0 +1,4 @@
+interface:
+  display_name: "Essay Writer & Editor"
+  short_description: "Plan, draft, edit, and review stronger essays"
+  default_prompt: "Use $essay-writer to draft or revise this essay while preserving its argument, evidence, and voice."

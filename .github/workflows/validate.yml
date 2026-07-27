@@ -1,0 +1,46 @@
+name: Validate package
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Run deterministic package checks
+        run: python tests/validate_package.py
+
+      - name: Install official validator dependency
+        run: python -m pip install --disable-pip-version-check --no-cache-dir PyYAML==6.0.2
+
+      - name: Run OpenAI skill quick validator
+        shell: bash
+        run: |
+          set -euo pipefail
+          QUICK_VALIDATOR="$RUNNER_TEMP/openai-quick-validate.py"
+          curl \
+            --fail \
+            --location \
+            --retry 3 \
+            --silent \
+            --show-error \
+            "https://raw.githubusercontent.com/openai/skills/49f948faa9258a0c61caceaf225e179651397431/skills/.system/skill-creator/scripts/quick_validate.py" \
+            --output "$QUICK_VALIDATOR"
+          echo "6cc9dc3199c935916cf6f73fcbbbb0e3bb1b58c8f5109fefa499978908164f51  $QUICK_VALIDATOR" \
+            | sha256sum --check -
+          python "$QUICK_VALIDATOR" skills/essay-writer

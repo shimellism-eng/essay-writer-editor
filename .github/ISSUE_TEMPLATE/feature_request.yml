@@ -1,0 +1,41 @@
+name: Feature request
+description: Suggest a useful, responsible improvement for essay writers.
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Explain the writing problem before proposing a solution. Requests for detector bypass, concealed AI use, invented evidence or guaranteed grades are outside the project's scope.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Writing problem
+      description: Who encounters this problem, and what are they trying to accomplish?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: Describe the result or workflow that would help.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Safe example
+      description: Give a small synthetic or shareable example if it makes the request clearer.
+  - type: textarea
+    id: protections
+    attributes:
+      label: What should be protected?
+      description: Note any facts, sources, quotations, voice features, accessibility needs or integrity rules that matter.
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: This request does not depend on hiding required AI use or bypassing a detector.
+          required: true
+        - label: I removed personal, confidential and identifying information.
+          required: true

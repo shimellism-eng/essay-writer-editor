@@ -1,0 +1,38 @@
+{
+  "name": "essay-writer-editor",
+  "version": "0.1.0-beta",
+  "description": "Plan, draft, research, edit, review, and analyse essays while preserving evidence and voice.",
+  "author": {
+    "name": "shimellism-eng",
+    "url": "https://github.com/shimellism-eng"
+  },
+  "homepage": "https://github.com/shimellism-eng/essay-writer-editor#readme",
+  "repository": "https://github.com/shimellism-eng/essay-writer-editor",
+  "license": "MIT",
+  "keywords": [
+    "essay writer",
+    "essay editor",
+    "essay writing assistant",
+    "essay helper",
+    "academic writing",
+    "AI writing analysis"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Essay Writer & Editor",
+    "shortDescription": "Plan, draft, edit, and review stronger essays",
+    "longDescription": "Write an essay from a topic, brief, notes, rubric, or supplied sources; revise an existing draft; research competing evidence; or review probable AI-writing signals with clear uncertainty.",
+    "developerName": "shimellism-eng",
+    "category": "Productivity",
+    "capabilities": [
+      "Write",
+      "Review",
+      "Research"
+    ],
+    "defaultPrompt": [
+      "Draft an essay from my notes without inventing evidence.",
+      "Revise my essay while preserving my argument and voice.",
+      "Assess this text for probable AI-writing signals and explain the uncertainty."
+    ]
+  }
+}

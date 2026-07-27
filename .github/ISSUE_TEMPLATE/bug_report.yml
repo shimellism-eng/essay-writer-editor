@@ -1,0 +1,77 @@
+name: Bug report
+description: Report a reproducible problem with planning, drafting, editing, reviewing, research or installation.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a problem. Do not include private student work, personal information, confidential sources or unpublished application material. A short synthetic example is best.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of the project is affected?
+      options:
+        - Installation or discovery
+        - Plan mode
+        - Draft mode
+        - Edit mode
+        - Review mode
+        - Research mode
+        - Documentation
+        - Package validation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: Request used
+      description: Share the smallest safe request that reproduces the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: What happened?
+      description: Describe the result and why it was a problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      description: Describe the behaviour you expected, including anything that should have been preserved.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Agent and version
+      description: Give the AI agent and version if you know them.
+  - type: dropdown
+    id: install
+    attributes:
+      label: Installation route
+      options:
+        - Skills CLI
+        - Native Codex folder
+        - Another Agent Skills folder
+        - Manual adaptation
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Include relevant logs or screenshots only after removing private information.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Privacy and scope checks
+      options:
+        - label: I removed personal, confidential and identifying information.
+          required: true
+        - label: I checked that this is not a sensitive security report.
+          required: true
