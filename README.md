@@ -16,7 +16,7 @@ It is designed to improve the writing, not to fool an AI detector or hide requir
 
 ## Install in 30 seconds
 
-With Node.js 18 or newer installed, run:
+With Node.js 22.20 or newer installed, run:
 
 ```bash
 npx skills add shimellism-eng/essay-writer-editor --skill essay-writer -g -y --copy
@@ -174,7 +174,7 @@ This repository contains one skill named `essay-writer`. The installation route 
 
 ### Skills CLI
 
-The Skills CLI requires Node.js 18 or newer. Install directly from GitHub:
+The current Skills CLI requires Node.js 22.20 or newer. Install directly from GitHub:
 
 ```bash
 npx skills add shimellism-eng/essay-writer-editor --skill essay-writer -g -y --copy
