@@ -59,6 +59,16 @@ For an AI-writing signal report, confirm that:
 - multilingual, translated, technical, formulaic, collaborative, and edited text receive extra caution;
 - the suggested next step is proportionate and transparent.
 
+## Pattern audit
+
+For a pattern audit or repair, confirm that:
+
+- descriptive counts are reported only when actually measured and scoped;
+- local recurrence is not inflated into statistical significance or authorship proof;
+- counterexamples and ordinary genre, translation, accessibility, technical, or collaboration explanations are considered;
+- the repair improves meaning, rhythm, specificity, or voice rather than targeting a detector;
+- quotations, citations, numbers, uncertainty, dialect, and purposeful repetition remain intact.
+
 ## Regression scenarios
 
 Keep these behaviours stable:
@@ -75,6 +85,7 @@ Keep these behaviours stable:
 10. Analyse a long synthetic passage with quoted evidence and counterevidence.
 11. Avoid overclaiming about polished human prose.
 12. Return `insufficient text` for a short passage.
+13. Identify and repair mechanically repetitive prose without adding errors or claiming detector evasion.
 
 ## Worked examples
 

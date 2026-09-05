@@ -1,6 +1,6 @@
 ---
 name: essay-writer
-description: Plan, write, research, edit, review, and analyse essays while protecting the writer's voice and factual integrity. Use when asked for an essay writer, AI essay writer, essay writing assistant, essay helper, thesis, outline, argument, complete draft from scratch, essay editor, essay rewriter, essay improver, natural or human-sounding essay, rubric feedback, source-based research, citations, or an assessment of whether text shows probable AI-generated writing signals.
+description: Plan, write, research, edit, review, and analyse essays while protecting the writer's voice and factual integrity. Use when asked for an essay writer, AI essay writer, essay writing assistant, essay helper, thesis, outline, argument, complete draft from scratch, essay editor, essay rewriter, essay improver, natural or human-sounding essay, pattern audit, mechanical-pattern repair, rubric feedback, source-based research, citations, or an assessment of whether text shows probable AI-generated writing signals.
 ---
 
 # Essay Writer & Editor
@@ -32,10 +32,12 @@ Infer the mode from the request. Combine modes in a sensible order when useful, 
 | **Review** | Giving feedback without silently rewriting | Evidence-led assessment and prioritised revision plan |
 | **Research** | Investigating a current, contested, or evidence-heavy topic | Source-grounded contradiction map and synthesis |
 | **Detect** | Assessing probable AI-writing signals | Calibrated signal report; no rewrite unless separately requested |
+| **Pattern** | Finding and repairing repetitive or mechanically regular prose patterns | Pattern inventory, limits, and a meaning-preserving repair when requested |
 
 Read [references/essay-modes.md](references/essay-modes.md) for mode inputs, decisions, and output contracts.
 
 Use **Detect** only when the user explicitly asks for AI-writing analysis. Do not turn ordinary editing into an authorship judgement.
+Use **Pattern** when the user explicitly asks to inspect statistical, structural, or repetitive writing patterns, or to repair prose that feels mechanically regular. Pattern evidence can guide a reader-focused edit, but it cannot establish authorship.
 
 ## Load the relevant guidance
 
@@ -43,6 +45,7 @@ Use **Detect** only when the user explicitly asks for AI-writing analysis. Do no
 - Read [references/voice-and-editing.md](references/voice-and-editing.md) for editing strength, voice samples, dialect, regional spelling, or accessibility.
 - Read [references/research-lenses.md](references/research-lenses.md) for external research, contested claims, or a multi-perspective evidence review.
 - Read [references/ai-writing-signals.md](references/ai-writing-signals.md) for every Detect request.
+- Read [references/pattern-audit.md](references/pattern-audit.md) for every Pattern request or when a requested edit specifically targets repetitive or mechanically regular prose.
 - Apply [references/quality-check.md](references/quality-check.md) after a complete draft, deep edit, public-facing essay, or behavioural evaluation.
 
 ## Common workflow
@@ -99,6 +102,20 @@ Use the lightest level that fulfils the request:
 
 Never silently alter a quotation, citation, factual claim, numerical relationship, or the writer's stated position. Disclose material interpretive changes.
 
+## Pattern audit and repair
+
+AI-assisted writing can show statistical or structural regularities, but human writing can show them too. A repeated pattern is evidence about the text's shape, not proof of who wrote it.
+
+When the user asks for a pattern audit:
+
+1. Inspect recurring sentence openings, clause shapes, sentence-length bands, paragraph sizes, transition phrases, list or triad structures, hedge density, abstraction, vocabulary repetition, and conclusion formulas.
+2. Use measured counts only when they were actually calculated. Otherwise describe the observation as approximate or qualitative. Do not invent p-values, corpus comparisons, detector scores, or probabilities.
+3. Quote short examples, identify useful counterexamples, and explain ordinary causes such as genre, rubric, translation, accessibility, technical subject matter, collaboration, or deliberate emphasis.
+4. If repair is requested, change only patterns that harm clarity, rhythm, specificity, or the writer's recognisable voice. Vary structure according to meaning, not to create artificial randomness.
+5. Preserve facts, quotations, citations, numbers, uncertainty, dialect, code-switching, and purposeful repetition. Never add mistakes, slang, or awkwardness to simulate human writing.
+
+Return the repaired passage first when an edit was requested, followed by a short pattern note and any material limitations. If the user asked only for analysis, do not rewrite silently.
+
 ## AI-writing signal analysis
 
 Detection is a text-pattern assessment, not proof of authorship. Use these labels:
@@ -131,4 +148,5 @@ Before returning substantial work, confirm that:
 - sentence and paragraph shapes are not mechanically repeated;
 - the ending adds consequence or closure instead of repeating the introduction;
 - the requested length, format, dialect, spelling, and level are intact;
+- any pattern repair improves reader experience or voice rather than targeting a detector;
 - the output follows the user's authorship and disclosure rules.

@@ -6,6 +6,8 @@ Use this reference only when the user explicitly asks whether a passage shows si
 
 Text-only analysis cannot verify authorship. A human can write highly regular prose, an AI can produce irregular prose, and editing can mix both. This mode identifies patterns worth examining and explains uncertainty.
 
+Statistical or structural regularity is still only text evidence. Sentence-length distributions, repeated openings, transition frequency, vocabulary repetition, and paragraph symmetry can be discussed when actually measured, but they do not establish authorship or justify a probability. If the user wants the prose repaired, use Pattern or Edit mode as a separate reader-focused task.
+
 Do not:
 
 - claim that an assessment proves who or what wrote the text;

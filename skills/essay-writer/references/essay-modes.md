@@ -14,6 +14,7 @@ Use this reference to select the smallest workflow that satisfies the request. A
 | “Grade this against the rubric” | Review | Review only |
 | “Find evidence and competing views” | Research | Research → Plan → Draft |
 | “Does this look AI-generated?” | Detect | Detect only |
+| “Find or fix repetitive statistical or structural patterns” | Pattern | Pattern → Edit → Review |
 
 Do not silently switch Review or Detect into rewriting. If several modes are requested, complete them in the order that avoids wasted work.
 
@@ -116,3 +117,11 @@ Do not describe analytical lenses as real experts who were consulted.
 Use [ai-writing-signals.md](ai-writing-signals.md). Detection produces a calibrated report, not a rewrite, accusation, percentage, or model attribution.
 
 If the user also wants an edit, finish and clearly separate the signal report before beginning the edit. Improve the writing for truth, argument, voice, and reader experience, never for detector evasion.
+
+## Pattern
+
+Use [pattern-audit.md](pattern-audit.md) when the user asks for statistical, structural, repetitive, or mechanically regular writing patterns to be identified or repaired.
+
+Pattern mode may describe sentence-shape recurrence, rhythm, transition frequency, paragraph uniformity, rhetorical lists, abstraction, stance markers, vocabulary repetition, and repeated paragraph templates. It may use simple descriptive counts when they were actually measured, but it must not invent statistics or treat a pattern as authorship evidence.
+
+If repair is requested, preserve the writer's meaning, evidence, quotations, citations, numbers, uncertainty, dialect, and purposeful repetition. Do not add mistakes or randomness, and do not promise a detector result.

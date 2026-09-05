@@ -6,6 +6,10 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) an
 
 ## [Unreleased]
 
+### Added
+
+- Pattern audit and repair mode for recurring statistical or structural prose patterns, with descriptive-count and detector-evasion safeguards.
+
 ### Planned
 
 - Feedback from public beta users and additional agent compatibility checks.

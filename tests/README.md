@@ -47,7 +47,7 @@ PyYAML dependency, and validates `skills/essay-writer`.
 
 ## Grade a behavioural case
 
-1. Give the selected case's `input` object to the skill.
+1. Give the selected case's `input` object to the skill, including Pattern-mode cases when testing repetitive-prose analysis or repair.
 2. Save the response outside this repository or in an ignored working folder.
 3. Apply every `automated_response_checks` entry literally.
 4. Grade every `human_or_model_rubric` entry and record evidence for the score.

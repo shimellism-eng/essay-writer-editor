@@ -8,7 +8,7 @@
 
 Plan, draft and revise natural essays in your voice, with safeguards designed to reduce invented facts, sources and personal experience.
 
-Essay Writer & Editor is an open-source Agent Skill for people who need help turning a prompt, idea, source pack or rough draft into a stronger essay. It can write an essay from scratch, edit an existing essay, review an argument, investigate a topic from several perspectives and analyse possible AI-writing signals.
+Essay Writer & Editor is an open-source Agent Skill for people who need help turning a prompt, idea, source pack or rough draft into a stronger essay. It can write an essay from scratch, edit an existing essay, review an argument, investigate a topic from several perspectives, audit repetitive prose patterns, and analyse possible AI-writing signals.
 
 It is designed to improve the writing, not to fool an AI detector or hide required AI use.
 
@@ -39,6 +39,7 @@ If this project helps your writing, [star the repository](https://github.com/shi
 - **Support research:** compare practical experience, academic evidence, objections, incentives and historical precedents.
 - **Check evidence:** preserve quotations, citations, numbers and uncertainty, and mark missing support instead of inventing it.
 - **Analyse AI-writing signals:** return a cautious, evidence-based assessment with counterevidence and limitations.
+- **Audit writing patterns:** identify recurring sentence shapes, transitions, rhythm, paragraph templates and abstraction, then repair reader-facing problems without adding artificial errors.
 - **Protect the writer's voice:** retain purposeful dialect, regional spelling, code-switching and non-native expression.
 
 It supports argumentative, analytical, expository, compare-and-contrast, reflective, narrative, application and general nonfiction essays.
@@ -131,6 +132,17 @@ the limitations. Do not rewrite it.
 [text]
 ```
 
+### Audit and repair repetitive patterns
+
+```text
+Use $essay-writer in Pattern mode. Identify recurring sentence, transition,
+rhythm and paragraph patterns in this passage. Then repair only the patterns
+that reduce clarity or erase the writer's voice. Use descriptive observations,
+not invented statistics, and do not optimise for an AI detector.
+
+[text]
+```
+
 ## Modes
 
 | Mode | Best for | Typical result |
@@ -141,12 +153,13 @@ the limitations. Do not rewrite it.
 | Review | Feedback without a rewrite | Prioritised assessment against the prompt or rubric |
 | Research | A disputed or complex topic | Multi-perspective research map and synthesis |
 | Detect | Examining writing patterns | Cautious assessment, evidence, counterevidence and limitations |
+| Pattern | Auditing or repairing repetitive prose | Pattern inventory, limitations and reader-focused repair |
 
 Modes can be combined. For example, `Plan → Draft → Review` develops an essay and then checks the result.
 
 ## About AI-writing signal analysis
 
-No text-only detector can reliably establish authorship. Polished human writing may look formulaic, while AI-generated writing can be edited to look individual. Short, translated, technical, formulaic, multilingual and mixed-authorship texts are particularly difficult to assess fairly.
+No text-only detector can reliably establish authorship. Human writing and AI-assisted writing can both show statistical or structural patterns, while irregular prose can come from editing or collaboration. Short, translated, technical, formulaic, multilingual and mixed-authorship texts are particularly difficult to assess fairly.
 
 Detect mode therefore reports one of four assessments:
 

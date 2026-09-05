@@ -360,6 +360,22 @@
           }
         ]
       }
+    },
+    {
+      "id": "pattern-audit-repair",
+      "case_type": "positive",
+      "scenario": "pattern_audit_and_repair",
+      "mode": "pattern",
+      "input": {
+        "user_request": "Use Pattern mode. Identify recurring sentence, transition, rhythm, and paragraph patterns in this passage, then repair only the patterns that reduce clarity or erase the writer's voice. Use descriptive observations rather than invented statistics. Do not claim authorship, add errors, or optimise for an AI detector.",
+        "materials": [
+          {
+            "type": "draft",
+            "label": "Repetitive essay passage",
+            "content": "Community gardens are valuable because they create social connection. Community gardens are valuable because they support local food growing. Community gardens are valuable because they provide educational opportunities. Community gardens are valuable because they improve wellbeing. These benefits show that community gardens are valuable for many reasons. In addition, community gardens can support local groups. In addition, community gardens can provide tools. In addition, community gardens can provide training. In conclusion, community gardens are valuable. The plot beside our library is more specific than this list: volunteers grow herbs there on Saturday mornings, and the librarian uses the beds for a Year 6 measuring activity. That detail does not prove that every garden improves wellbeing, but it gives the argument something to examine. The council should therefore fund a one-year trial only if it records participation, maintenance time, and access for people who cannot garden on the ground."
+          }
+        ]
+      }
     }
   ]
 }

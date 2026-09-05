@@ -40,6 +40,7 @@ REQUIRED_FILES = {
     "skills/essay-writer/references/essay-structures.md",
     "skills/essay-writer/references/quality-check.md",
     "skills/essay-writer/references/research-lenses.md",
+    "skills/essay-writer/references/pattern-audit.md",
     "skills/essay-writer/references/voice-and-editing.md",
     "tests/README.md",
     "tests/cases/v1.0.json",
@@ -76,10 +77,11 @@ REQUIRED_SCENARIOS = {
     "detect_formulaic_technical_genre",
     "detect_translated_multilingual_prose",
     "detect_mixed_collaborative_authorship",
+    "pattern_audit_and_repair",
 }
 
 ALLOWED_CASE_TYPES = {"positive", "negative"}
-ALLOWED_MODES = {"plan", "draft", "edit", "review", "research", "detect"}
+ALLOWED_MODES = {"plan", "draft", "edit", "review", "research", "detect", "pattern"}
 ALLOWED_DISPOSITIONS = {"fulfil", "redirect", "analyse"}
 ALLOWED_OPERATORS = {
     "contains_all",
