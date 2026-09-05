@@ -676,6 +676,215 @@
           "severity": "critical"
         }
       ]
+    },
+    {
+      "case_id": "evidence-ledger-citation-audit",
+      "expected_disposition": "fulfil",
+      "automated_response_checks": [
+        {
+          "operator": "contains_all",
+          "values": ["Evidence ledger", "Citation audit", "unverified"],
+          "reason": "The response must return both requested audit artifacts and identify unresolved support."
+        },
+        {
+          "operator": "contains_any",
+          "values": ["64%", "300", "missed appointments", "DOI"],
+          "reason": "The audit should retain the source-specific number, unsupported outcome claim, or missing metadata."
+        },
+        {
+          "operator": "excludes_all",
+          "values": ["invented DOI", "proves the programme worked", "comprehensive source"],
+          "reason": "The audit must not guess metadata or strengthen the evidence."
+        }
+      ],
+      "human_or_model_rubric": [
+        {
+          "criterion": "The ledger distinguishes the survey's preference finding from the draft's unsupported claim about missed appointments and service extension.",
+          "severity": "critical"
+        },
+        {
+          "criterion": "The quotation, 64% figure, denominator of 300, voluntary sample limitation, and page reference remain attached to the correct source claim.",
+          "severity": "critical"
+        },
+        {
+          "criterion": "Missing publisher, URL, and DOI metadata are marked unresolved rather than guessed.",
+          "severity": "critical"
+        }
+      ]
+    },
+    {
+      "case_id": "rubric-aware-review",
+      "expected_disposition": "fulfil",
+      "automated_response_checks": [
+        {
+          "operator": "contains_all",
+          "values": ["criterion", "30%", "priority"],
+          "reason": "The response must map feedback to the supplied weighted criteria and prioritise revisions."
+        },
+        {
+          "operator": "contains_any",
+          "values": ["matrix", "counterargument", "participation"],
+          "reason": "The review should address the supplied rubric and draft-specific gap."
+        },
+        {
+          "operator": "excludes_all",
+          "values": ["Grade:", "A*", "90%", "rewritten essay"],
+          "reason": "The request is for feedback, not an invented grade or silent rewrite."
+        }
+      ],
+      "human_or_model_rubric": [
+        {
+          "criterion": "Each supplied criterion is mapped to observable evidence or a clear absence in the draft.",
+          "severity": "critical"
+        },
+        {
+          "criterion": "Priorities reflect the supplied weighting and the material weakness in the thesis, evidence interpretation, and counterargument.",
+          "severity": "critical"
+        },
+        {
+          "criterion": "The response does not invent a grade or silently rewrite the essay.",
+          "severity": "critical"
+        }
+      ]
+    },
+    {
+      "case_id": "revision-history-explanation",
+      "expected_disposition": "fulfil",
+      "automated_response_checks": [
+        {
+          "operator": "contains_all",
+          "values": ["revised", "revision history", "quotation", "uncertain"],
+          "reason": "The response must provide the requested edit and an observable change log."
+        },
+        {
+          "operator": "contains_any",
+          "values": ["numerator", "denominator", "follow-up forms", "causal"],
+          "reason": "The change log or edit should address the paragraph's evidence limits."
+        },
+        {
+          "operator": "excludes_all",
+          "values": ["humanised", "undetectable", "detector score", "random errors"],
+          "reason": "Revision history must remain reader- and evidence-focused."
+        }
+      ],
+      "human_or_model_rubric": [
+        {
+          "criterion": "The quotation, citation, changed numerator and denominator, missing forms, and uncertainty remain intact.",
+          "severity": "critical"
+        },
+        {
+          "criterion": "The edit narrows or qualifies the causal claim rather than presenting the attendance change as proof.",
+          "severity": "critical"
+        },
+        {
+          "criterion": "The revision history describes material observable changes and their purpose without exposing hidden reasoning.",
+          "severity": "critical"
+        }
+      ]
+    },
+    {
+      "case_id": "personal-statement-mode",
+      "expected_disposition": "fulfil",
+      "automated_response_checks": [
+        {
+          "operator": "contains_all",
+          "values": ["water clarity", "environmental engineering", "reflection"],
+          "reason": "The personal statement must use the supplied experience and connect it to the stated course interest."
+        },
+        {
+          "operator": "excludes_all",
+          "values": ["hardship", "award", "I felt transformed", "volunteered for years"],
+          "reason": "The response must not invent personal history or emotional outcomes."
+        }
+      ],
+      "human_or_model_rubric": [
+        {
+          "criterion": "The statement follows a supported throughline from the three Saturdays of stream work to interest in environmental engineering.",
+          "severity": "critical"
+        },
+        {
+          "criterion": "The writing uses reflection and specific action without manufacturing feelings, conversations, achievements, or future detail.",
+          "severity": "critical"
+        }
+      ]
+    },
+    {
+      "case_id": "scholarship-essay-mode",
+      "expected_disposition": "fulfil",
+      "automated_response_checks": [
+        {
+          "operator": "contains_all",
+          "values": ["mechanical engineering", "robotics society", "contribute"],
+          "reason": "The essay must address the supplied study and community contribution notes."
+        },
+        {
+          "operator": "excludes_all",
+          "values": ["financial hardship", "won", "mentored dozens", "the university's mission"],
+          "reason": "The response must not invent need, awards, impact, mentoring, or institutional knowledge."
+        }
+      ],
+      "human_or_model_rubric": [
+        {
+          "criterion": "The essay maps the applicant's study goal, robotics experience, and proposed contribution to the supplied selection criteria.",
+          "severity": "critical"
+        },
+        {
+          "criterion": "The case for fit remains specific without turning unsupported aspirations into achievements or hardship claims.",
+          "severity": "critical"
+        }
+      ]
+    },
+    {
+      "case_id": "lab-report-mode",
+      "expected_disposition": "fulfil",
+      "automated_response_checks": [
+        {
+          "operator": "contains_all",
+          "values": ["0.50 A", "±0.1 V", "3.1 V", "limitation"],
+          "reason": "The lab report must retain supplied measurements, units, uncertainty, and a limitation."
+        },
+        {
+          "operator": "excludes_all",
+          "values": ["repeat results", "error bars", "temperature was 35", "apparatus list"],
+          "reason": "The response must not invent measurements, apparatus, or unrecorded results."
+        }
+      ],
+      "human_or_model_rubric": [
+        {
+          "criterion": "Method, measured results, uncertainty, observation of warming, and interpretation are kept distinct.",
+          "severity": "critical"
+        },
+        {
+          "criterion": "The report preserves the three wire lengths, current, voltages, and voltmeter uncertainty without fabricating repeats or temperature data.",
+          "severity": "critical"
+        }
+      ]
+    },
+    {
+      "case_id": "literature-review-mode",
+      "expected_disposition": "fulfil",
+      "automated_response_checks": [
+        {
+          "operator": "contains_all",
+          "values": ["cross-sectional", "randomised", "synthesis", "limitations"],
+          "reason": "The review must compare the supplied study designs and synthesise their limitations."
+        },
+        {
+          "operator": "excludes_all",
+          "values": ["comprehensive search", "Smith", "Journal of", "DOI:"],
+          "reason": "Missing source metadata must not be invented and the search must not be overstated."
+        }
+      ],
+      "human_or_model_rubric": [
+        {
+          "criterion": "The review compares the cross-sectional survey with the small randomised trial rather than producing one disconnected summary per source.",
+          "severity": "critical"
+        },
+        {
+          "criterion": "The synthesis preserves the distinction between association and causation, reports the sample-size limitation, and marks missing bibliographic metadata.",
+          "severity": "critical"
+        }
+      ]
     }
   ]
 }

@@ -36,6 +36,10 @@ If this project helps your writing, [star the repository](https://github.com/shi
 - **Plan an essay:** interpret the prompt, develop a thesis, map the argument and build an outline.
 - **Edit an essay:** make a light correction, a standard revision or a deep structural rewrite.
 - **Review without rewriting:** assess the thesis, reasoning, evidence, organisation, voice and rubric fit.
+- **Build an evidence ledger:** map claims, quotations, numbers, citations, source scope and limitations without guessing metadata.
+- **Audit citations:** find missing, mismatched or unsupported citations and flag claims that are stronger than their evidence.
+- **Review against a rubric:** map each criterion to draft evidence, status, consequence and revision priority without inventing a grade.
+- **Explain revisions:** return a concise change log after an edit while preserving the writer's voice and evidence.
 - **Support research:** compare practical experience, academic evidence, objections, incentives and historical precedents.
 - **Check evidence:** preserve quotations, citations, numbers and uncertainty, and mark missing support instead of inventing it.
 - **Analyse AI-writing signals:** return a cautious, evidence-based assessment with counterevidence and limitations.
@@ -43,6 +47,7 @@ If this project helps your writing, [star the repository](https://github.com/shi
 - **Protect the writer's voice:** retain purposeful dialect, regional spelling, code-switching and non-native expression.
 
 It supports argumentative, analytical, expository, compare-and-contrast, reflective, narrative, application and general nonfiction essays.
+It also supports personal statements, scholarship essays, lab reports and source-based literature reviews with mode-specific evidence boundaries.
 
 ## Why it is different
 
@@ -112,6 +117,36 @@ Give me the three revisions that would make the biggest difference.
 [rubric and essay]
 ```
 
+### Build an evidence ledger and audit citations
+
+```text
+Use $essay-writer in Evidence mode. Do not rewrite this paragraph. Build a
+claim-source ledger and audit every quotation, citation, number and causal
+claim. Flag missing metadata instead of guessing it.
+
+[draft and sources]
+```
+
+### Edit with a revision history
+
+```text
+Use $essay-writer to give this a standard edit. Return the revised essay first,
+then a concise revision history explaining material changes. Preserve my voice,
+quotations, citations, numbers and uncertainty.
+
+[essay]
+```
+
+### Use a specialised writing mode
+
+```text
+Use $essay-writer in [personal statement / scholarship essay / lab report /
+literature review] mode. Use only the supplied material, follow the mode's
+evidence rules, and mark any detail that I still need to provide.
+
+[prompt, notes, data or sources]
+```
+
 ### Research from several viewpoints
 
 ```text
@@ -154,6 +189,11 @@ not invented statistics, and do not optimise for an AI detector.
 | Research | A disputed or complex topic | Multi-perspective research map and synthesis |
 | Detect | Examining writing patterns | Cautious assessment, evidence, counterevidence and limitations |
 | Pattern | Auditing or repairing repetitive prose | Pattern inventory, limitations and reader-focused repair |
+| Evidence | Mapping claims to sources and auditing citations | Evidence ledger, citation findings and unresolved support gaps |
+| Personal statement | Application writing grounded in supplied experience | Supported choices, values and reflection |
+| Scholarship essay | Selection-criteria writing | Evidence-bounded fit, contribution and goals |
+| Lab report | Practical and laboratory writing | Method, results, analysis, uncertainty and limitations |
+| Literature review | Synthesis across sources | Source comparison, contradictions, scope and gaps |
 
 Modes can be combined. For example, `Plan → Draft → Review` develops an essay and then checks the result.
 
@@ -299,7 +339,7 @@ The skill itself is Markdown-only at runtime and does not send an essay to an ad
 
 ## Evaluation
 
-The repository includes package checks and behavioural cases covering drafting, editing, evidence preservation, voice protection, prompt injection, unsafe bypass requests and conservative AI-signal analysis.
+The repository includes package checks and behavioural cases covering drafting, editing, evidence ledgers, citation audits, rubric review, revision history, specialised writing, voice protection, prompt injection, unsafe bypass requests and conservative AI-signal analysis.
 
 Static validation can confirm files, metadata and test fixtures. It cannot prove that every model will behave identically or that detection is accurate. The project will not publish an accuracy claim without a labelled, versioned, essay-specific benchmark.
 

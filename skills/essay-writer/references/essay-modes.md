@@ -15,6 +15,11 @@ Use this reference to select the smallest workflow that satisfies the request. A
 | “Find evidence and competing views” | Research | Research → Plan → Draft |
 | “Does this look AI-generated?” | Detect | Detect only |
 | “Find or fix repetitive statistical or structural patterns” | Pattern | Pattern → Edit → Review |
+| “Map claims to sources or audit citations” | Evidence | Evidence → Edit or Draft |
+| “Write a personal statement” | Personal statement | Plan → Personal statement → Review |
+| “Write a scholarship essay” | Scholarship essay | Plan → Scholarship essay → Review |
+| “Write a lab report” | Lab report | Plan → Lab report → Review |
+| “Synthesize research into a literature review” | Literature review | Research → Literature review → Review |
 
 Do not silently switch Review or Detect into rewriting. If several modes are requested, complete them in the order that avoids wasted work.
 
@@ -95,7 +100,13 @@ Review the essay without silently rewriting it.
 6. **Voice and clarity:** strengths worth preserving and passages that obstruct the reader.
 7. **Revision priorities:** the three to five changes with the largest likely benefit.
 
-Quote or point to specific passages. Separate observation from preference. Do not assign a grade unless the user supplies a rubric or grading scale that makes the grade meaningful.
+Quote or point to specific passages. Separate observation from preference. Do not assign a grade unless the user supplies a rubric or grading scale that makes the grade meaningful. When a rubric is supplied, use [rubric-review.md](rubric-review.md) and map each criterion to evidence, status, impact, and priority.
+
+## Evidence
+
+Use [evidence-and-citations.md](evidence-and-citations.md) to build a claim-source ledger or audit citations, quotations, numbers, and source metadata.
+
+Return the ledger and citation findings without silently rewriting the essay. Distinguish supported, partially supported, unsupported, unverified, and not-applicable claims. Never fill missing bibliographic details from memory or pattern matching.
 
 ## Research
 
@@ -125,3 +136,7 @@ Use [pattern-audit.md](pattern-audit.md) when the user asks for statistical, str
 Pattern mode may describe sentence-shape recurrence, rhythm, transition frequency, paragraph uniformity, rhetorical lists, abstraction, stance markers, vocabulary repetition, and repeated paragraph templates. It may use simple descriptive counts when they were actually measured, but it must not invent statistics or treat a pattern as authorship evidence.
 
 If repair is requested, preserve the writer's meaning, evidence, quotations, citations, numbers, uncertainty, dialect, and purposeful repetition. Do not add mistakes or randomness, and do not promise a detector result.
+
+## Personal statement, Scholarship essay, Lab report, and Literature review
+
+Use [specialized-writing.md](specialized-writing.md). These modes keep the shared evidence and voice rules but use different structures and evidence boundaries. Do not turn a personal statement into a résumé, a scholarship essay into invented hardship, a lab report into a polished result unsupported by data, or a literature review into a list of abstracts.

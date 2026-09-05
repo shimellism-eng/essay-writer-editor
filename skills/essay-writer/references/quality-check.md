@@ -69,6 +69,34 @@ For a pattern audit or repair, confirm that:
 - the repair improves meaning, rhythm, specificity, or voice rather than targeting a detector;
 - quotations, citations, numbers, uncertainty, dialect, and purposeful repetition remain intact.
 
+## Evidence and citation audit
+
+For an evidence ledger or citation audit, confirm that:
+
+- every material claim has a clear support status;
+- source claims, writer inference, and recommendations are separated;
+- quotations, citations, numbers, scope, and source limitations remain attached to the right claim;
+- missing metadata is marked unresolved rather than guessed;
+- causal language is no stronger than the available evidence.
+
+## Rubric review and revision history
+
+For rubric-aware review or a change log, confirm that:
+
+- each supplied criterion is mapped to observable evidence or a clearly marked absence;
+- priorities reflect the prompt, supplied weighting, and material risk rather than invented grading rules;
+- review feedback is not silently presented as a rewrite;
+- revision notes describe observable changes without exposing hidden reasoning or claiming an intention the writer did not supply.
+
+## Specialised writing
+
+For personal statements, scholarship essays, lab reports, and literature reviews, confirm that:
+
+- personal experience, hardship, achievement, data, studies, and impact were supplied or verified;
+- the structure fits the deliverable rather than forcing a generic five-paragraph essay;
+- lab measurements preserve units and uncertainty, and literature reviews distinguish synthesis from source claims;
+- missing personal details, readings, sources, or search scope are marked rather than invented.
+
 ## Regression scenarios
 
 Keep these behaviours stable:
@@ -86,6 +114,10 @@ Keep these behaviours stable:
 11. Avoid overclaiming about polished human prose.
 12. Return `insufficient text` for a short passage.
 13. Identify and repair mechanically repetitive prose without adding errors or claiming detector evasion.
+14. Build an evidence ledger and citation audit without guessing source metadata.
+15. Review against a supplied rubric using criterion-level priorities without inventing a grade.
+16. Explain material revisions in a concise change log while preserving voice and evidence.
+17. Handle personal statements, scholarship essays, lab reports, and literature reviews with their own evidence boundaries.
 
 ## Worked examples
 

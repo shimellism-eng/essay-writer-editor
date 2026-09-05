@@ -1,6 +1,6 @@
 ---
 name: essay-writer
-description: Plan, write, research, edit, review, and analyse essays while protecting the writer's voice and factual integrity. Use when asked for an essay writer, AI essay writer, essay writing assistant, essay helper, thesis, outline, argument, complete draft from scratch, essay editor, essay rewriter, essay improver, natural or human-sounding essay, pattern audit, mechanical-pattern repair, rubric feedback, source-based research, citations, or an assessment of whether text shows probable AI-generated writing signals.
+description: Plan, write, research, edit, review, and analyse essays while protecting the writer's voice and factual integrity. Use when asked for an essay writer, AI essay writer, essay writing assistant, essay helper, thesis, outline, argument, complete draft from scratch, essay editor, essay rewriter, essay improver, natural or human-sounding essay, evidence ledger, citation audit, rubric review, revision history, pattern audit, mechanical-pattern repair, personal statement, scholarship essay, lab report, literature review, source-based research, or an assessment of whether text shows probable AI-generated writing signals.
 ---
 
 # Essay Writer & Editor
@@ -33,11 +33,18 @@ Infer the mode from the request. Combine modes in a sensible order when useful, 
 | **Research** | Investigating a current, contested, or evidence-heavy topic | Source-grounded contradiction map and synthesis |
 | **Detect** | Assessing probable AI-writing signals | Calibrated signal report; no rewrite unless separately requested |
 | **Pattern** | Finding and repairing repetitive or mechanically regular prose patterns | Pattern inventory, limits, and a meaning-preserving repair when requested |
+| **Evidence** | Building a claim-source ledger or auditing citations | Evidence ledger, citation findings, and unresolved support gaps |
+| **Personal statement** | Writing or revising a personal statement | Supported choices, values, experience, and reflection without invention |
+| **Scholarship essay** | Writing or revising a scholarship essay | Evidence-bounded case for fit, contribution, and goals |
+| **Lab report** | Writing or revising a practical or laboratory report | Method, results, analysis, limitations, and data provenance |
+| **Literature review** | Synthesising a supplied or researched body of literature | Search scope, source comparison, synthesis, contradictions, and gaps |
 
 Read [references/essay-modes.md](references/essay-modes.md) for mode inputs, decisions, and output contracts.
 
 Use **Detect** only when the user explicitly asks for AI-writing analysis. Do not turn ordinary editing into an authorship judgement.
 Use **Pattern** when the user explicitly asks to inspect statistical, structural, or repetitive writing patterns, or to repair prose that feels mechanically regular. Pattern evidence can guide a reader-focused edit, but it cannot establish authorship.
+Use **Evidence** when the user asks for a claim-source ledger, citation audit, quotation check, number check, or support-gap report without necessarily wanting a rewritten essay.
+Use the specialised writing modes when the requested deliverable is a personal statement, scholarship essay, lab report, or literature review. Read the specialised-writing reference before drafting or deeply editing one.
 
 ## Load the relevant guidance
 
@@ -46,6 +53,10 @@ Use **Pattern** when the user explicitly asks to inspect statistical, structural
 - Read [references/research-lenses.md](references/research-lenses.md) for external research, contested claims, or a multi-perspective evidence review.
 - Read [references/ai-writing-signals.md](references/ai-writing-signals.md) for every Detect request.
 - Read [references/pattern-audit.md](references/pattern-audit.md) for every Pattern request or when a requested edit specifically targets repetitive or mechanically regular prose.
+- Read [references/evidence-and-citations.md](references/evidence-and-citations.md) for every Evidence request or citation/claim audit.
+- Read [references/rubric-review.md](references/rubric-review.md) when a Review request includes a rubric or asks for prioritised criterion-by-criterion feedback.
+- Read [references/revision-history.md](references/revision-history.md) when the user asks what changed, why it changed, or for a revision log.
+- Read [references/specialized-writing.md](references/specialized-writing.md) for personal statements, scholarship essays, lab reports, and literature reviews.
 - Apply [references/quality-check.md](references/quality-check.md) after a complete draft, deep edit, public-facing essay, or behavioural evaluation.
 
 ## Common workflow
@@ -101,6 +112,18 @@ Use the lightest level that fulfils the request:
 - **Deep:** rebuild the argument or structure while preserving facts, constraints, and recognisable voice.
 
 Never silently alter a quotation, citation, factual claim, numerical relationship, or the writer's stated position. Disclose material interpretive changes.
+
+When the user asks what changed or requests a revision history, return the revised work first and then a concise change log. Describe material changes accurately; do not claim to have preserved something that was altered, and do not expose hidden reasoning.
+
+## Evidence ledger and citation audit
+
+Use Evidence mode to separate what a source says, what the draft claims, what follows as an inference, and what still needs support. Track the exact source, quotation or paraphrase status, number referent, citation metadata, scope, and limitation for each material claim.
+
+Never repair a citation by guessing an author, date, title, publisher, DOI, page, URL, or quotation. Mark missing metadata as unresolved and recommend the smallest verification step. An evidence ledger is an audit artifact, not permission to rewrite a weak claim into certainty.
+
+## Rubric-aware review
+
+When a rubric is supplied, map each criterion to observed evidence in the draft, status, consequence, and revision priority. Do not invent a grade or convert a rubric into a verdict when its scale is absent. Review remains feedback unless the user separately requests a rewrite.
 
 ## Pattern audit and repair
 

@@ -9,6 +9,10 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) an
 ### Added
 
 - Pattern audit and repair mode for recurring statistical or structural prose patterns, with descriptive-count and detector-evasion safeguards.
+- Evidence ledger and citation audit mode for source-bounded claims, quotations, numbers, metadata and support gaps.
+- Rubric-aware review with criterion-level evidence mapping and prioritised revision actions.
+- Optional revision histories that describe observable material changes without exposing hidden reasoning.
+- Personal statement, scholarship essay, lab report and literature review modes with specialised evidence boundaries.
 
 ### Planned
 
@@ -19,7 +23,7 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) an
 
 ### Added
 
-- Plan, Draft, Edit, Review, Research and Detect modes.
+- Plan, Draft, Edit, Review, Research, Detect, Pattern, Evidence and specialised writing modes.
 - Complete essay drafting from a prompt, topic, rubric, notes or supplied sources.
 - Light, standard and deep editing while protecting the writer's position and voice.
 - Evidence safeguards for facts, quotations, citations, numbers and uncertainty.

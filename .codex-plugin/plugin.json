@@ -1,7 +1,7 @@
 {
   "name": "essay-writer-editor",
   "version": "0.1.0-beta",
-  "description": "Plan, draft, research, edit, review, and analyse essays while preserving evidence, voice, and reader-focused prose patterns.",
+  "description": "Plan, draft, research, edit, review, and analyse essays while preserving evidence, voice, citations, and reader-focused prose patterns.",
   "author": {
     "name": "shimellism-eng",
     "url": "https://github.com/shimellism-eng"
@@ -16,13 +16,17 @@
     "essay helper",
     "academic writing",
     "AI writing analysis",
-    "writing pattern audit"
+    "writing pattern audit",
+    "citation audit",
+    "rubric review",
+    "lab report",
+    "literature review"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Essay Writer & Editor",
     "shortDescription": "Write and improve essays",
-    "longDescription": "Write an essay from a topic, brief, notes, rubric, or supplied sources; revise an existing draft; audit or repair repetitive prose patterns; research competing evidence; or review probable AI-writing signals with clear uncertainty.",
+    "longDescription": "Write an essay from a topic, brief, notes, rubric, or supplied sources; build an evidence ledger; audit citations; review against a rubric; explain revisions; write specialised personal, scholarship, lab, or literature-review pieces; audit or repair repetitive prose patterns; research competing evidence; or review probable AI-writing signals with clear uncertainty.",
     "developerName": "shimellism-eng",
     "category": "Productivity",
     "capabilities": [

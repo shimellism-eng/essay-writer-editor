@@ -36,11 +36,15 @@ REQUIRED_FILES = {
     "skills/essay-writer/SKILL.md",
     "skills/essay-writer/agents/openai.yaml",
     "skills/essay-writer/references/ai-writing-signals.md",
+    "skills/essay-writer/references/evidence-and-citations.md",
     "skills/essay-writer/references/essay-modes.md",
     "skills/essay-writer/references/essay-structures.md",
     "skills/essay-writer/references/quality-check.md",
     "skills/essay-writer/references/research-lenses.md",
     "skills/essay-writer/references/pattern-audit.md",
+    "skills/essay-writer/references/revision-history.md",
+    "skills/essay-writer/references/rubric-review.md",
+    "skills/essay-writer/references/specialized-writing.md",
     "skills/essay-writer/references/voice-and-editing.md",
     "tests/README.md",
     "tests/cases/v1.0.json",
@@ -78,10 +82,30 @@ REQUIRED_SCENARIOS = {
     "detect_translated_multilingual_prose",
     "detect_mixed_collaborative_authorship",
     "pattern_audit_and_repair",
+    "evidence_ledger_and_citation_audit",
+    "rubric_aware_review",
+    "revision_history_explanation",
+    "personal_statement_mode",
+    "scholarship_essay_mode",
+    "lab_report_mode",
+    "literature_review_mode",
 }
 
 ALLOWED_CASE_TYPES = {"positive", "negative"}
-ALLOWED_MODES = {"plan", "draft", "edit", "review", "research", "detect", "pattern"}
+ALLOWED_MODES = {
+    "plan",
+    "draft",
+    "edit",
+    "review",
+    "research",
+    "detect",
+    "pattern",
+    "evidence",
+    "personal_statement",
+    "scholarship",
+    "lab_report",
+    "literature_review",
+}
 ALLOWED_DISPOSITIONS = {"fulfil", "redirect", "analyse"}
 ALLOWED_OPERATORS = {
     "contains_all",

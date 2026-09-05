@@ -376,6 +376,148 @@
           }
         ]
       }
+    },
+    {
+      "id": "evidence-ledger-citation-audit",
+      "case_type": "positive",
+      "scenario": "evidence_ledger_and_citation_audit",
+      "mode": "evidence",
+      "input": {
+        "user_request": "Use Evidence mode. Build a claim-source ledger and audit the citations in this paragraph. Do not rewrite the paragraph. Keep the quotation and numbers exact, distinguish inference from source claim, and flag missing metadata instead of guessing it.",
+        "materials": [
+          {
+            "type": "draft",
+            "label": "Evidence paragraph",
+            "content": "Nguyen (2024) found that 64% of 300 respondents preferred the evening bus service (p. 4). The report proves that extending the service will reduce missed appointments. It states, \"Respondents most often cited reliability as a reason for preferring the evening route\" (Nguyen, 2024, p. 4)."
+          },
+          {
+            "type": "source",
+            "label": "Supplied source note",
+            "content": "Nguyen, T. (2024), Student commuting survey, page 4: 64% of 300 voluntary respondents preferred the evening route. The survey measured preference and reported reasons; it did not measure missed appointments or the effect of extending service. Publisher, URL, and DOI were not supplied."
+          }
+        ]
+      }
+    },
+    {
+      "id": "rubric-aware-review",
+      "case_type": "positive",
+      "scenario": "rubric_aware_review",
+      "mode": "review",
+      "input": {
+        "user_request": "Review this essay against the supplied rubric without rewriting it. Return a criterion-by-criterion matrix and the three highest-priority revisions. Use the supplied weighting, do not invent a grade, and separate an observation from a preference.",
+        "materials": [
+          {
+            "type": "rubric",
+            "label": "Course rubric",
+            "content": "Thesis and prompt response: 30%. Evidence and source use: 30%. Counterargument: 20%. Clarity and organisation: 20%. A grade is not requested."
+          },
+          {
+            "type": "draft",
+            "label": "Essay draft",
+            "content": "Universities should record every lecture because recording is useful. A student survey found that 72% of 180 respondents watched at least one recording, but the survey did not measure attendance or participation. Some tutors worry that recording could reduce live questions. The university should record lectures."
+          }
+        ]
+      }
+    },
+    {
+      "id": "revision-history-explanation",
+      "case_type": "positive",
+      "scenario": "revision_history_explanation",
+      "mode": "edit",
+      "input": {
+        "user_request": "Give this a standard edit and then provide a concise revision history. Preserve the quotation, citation, number, uncertainty, and qualified position. Explain material changes only; do not describe the edit as humanising or detector optimisation.",
+        "materials": [
+          {
+            "type": "draft",
+            "label": "Draft paragraph",
+            "content": "The report says, \"Attendance rose, but the cause remains uncertain\" (Okafor, 2024, p. 17). Attendance increased from 48 of 120 invited participants to 63 of 118. This proves the programme worked, although two follow-up forms were missing."
+          }
+        ]
+      }
+    },
+    {
+      "id": "personal-statement-mode",
+      "case_type": "positive",
+      "scenario": "personal_statement_mode",
+      "mode": "personal_statement",
+      "input": {
+        "user_request": "Draft a personal statement using only the supplied notes. Show a clear throughline from experience to choice and reflection. Do not invent hardship, achievements, conversations, emotions, or future plans.",
+        "materials": [
+          {
+            "type": "application_prompt",
+            "label": "Course prompt",
+            "content": "Explain an experience that shaped your interest in environmental engineering."
+          },
+          {
+            "type": "notes",
+            "label": "Applicant notes",
+            "content": "Helped test water clarity at a community stream project for three Saturdays; recorded turbidity readings supplied by the project; became interested in how measurements inform decisions; wants to study environmental engineering; no further personal details supplied."
+          }
+        ]
+      }
+    },
+    {
+      "id": "scholarship-essay-mode",
+      "case_type": "positive",
+      "scenario": "scholarship_essay_mode",
+      "mode": "scholarship",
+      "input": {
+        "user_request": "Draft a scholarship essay from the prompt and notes. Address contribution, goals, and the selection criteria without inventing financial hardship, awards, service, impact, or institutional knowledge.",
+        "materials": [
+          {
+            "type": "scholarship_prompt",
+            "label": "Selection criteria",
+            "content": "Describe how the award would support your study and how you would contribute to the school community."
+          },
+          {
+            "type": "notes",
+            "label": "Applicant notes",
+            "content": "Plans to study mechanical engineering; wants to join the robotics society; has built two small line-following robots with a school team; hopes to help younger pupils learn basic programming; no claims about need or previous mentoring beyond these notes."
+          }
+        ]
+      }
+    },
+    {
+      "id": "lab-report-mode",
+      "case_type": "positive",
+      "scenario": "lab_report_mode",
+      "mode": "lab_report",
+      "input": {
+        "user_request": "Turn the supplied practical notes into a lab report. Keep measured values, units, uncertainty, and the difference between observations and interpretation. Do not invent readings, repeats, apparatus, or a result that makes the conclusion stronger.",
+        "materials": [
+          {
+            "type": "experiment_notes",
+            "label": "Resistance investigation",
+            "content": "Question: how does wire length affect resistance? Wire lengths 0.20 m, 0.40 m, and 0.60 m. Current held at 0.50 A. Measured voltages 1.1 V, 2.0 V, and 3.1 V. Voltmeter uncertainty ±0.1 V. Two readings were taken at each length but only the listed values were retained in the notes. The 0.60 m wire felt warmer; temperature was not measured."
+          }
+        ]
+      }
+    },
+    {
+      "id": "literature-review-mode",
+      "case_type": "positive",
+      "scenario": "literature_review_mode",
+      "mode": "literature_review",
+      "input": {
+        "user_request": "Build a source-based literature review from these notes. Synthesize the disagreement rather than writing one summary per source. Compare populations, methods, findings, and limitations, and do not call the search comprehensive or invent citations.",
+        "materials": [
+          {
+            "type": "source_note",
+            "label": "Study A",
+            "content": "A 2022 cross-sectional survey of 240 undergraduate students reported an association between outdoor study time and self-reported concentration. It did not establish causation."
+          },
+          {
+            "type": "source_note",
+            "label": "Study B",
+            "content": "A 2023 small randomised classroom trial compared a planted study area with an indoor room for four weeks. The groups showed no clear difference on a short attention task; the sample was 48 students."
+          },
+          {
+            "type": "source_note",
+            "label": "Review question",
+            "content": "How strong is the evidence that outdoor study spaces improve student concentration? No author names, titles, journals, or DOI details were supplied."
+          }
+        ]
+      }
     }
   ]
 }
