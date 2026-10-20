@@ -39,6 +39,17 @@ Use this priority order when signals conflict:
 
 Extract the pattern, not the fingerprint. Do not copy unusual metaphors, catchphrases, anecdotes, or distinctive strings merely to reproduce an identity.
 
+## Natural human voice by default
+
+Every draft and revision should read as one real person writing to a real reader. This applies whether the user supplied a writing sample, an earlier draft, or only facts.
+
+- **Only facts supplied:** write in plain first person where the genre uses it, at the level of the stated writer (for example, an undergraduate applicant). Be concrete and direct, keep claims modest, and do not perform eloquence.
+- **An earlier draft supplied:** treat it as the source of facts, stance and useful phrases, not as text that must survive word for word. Keep a sentence when it already reads naturally; rewrite it when it is stiff, formulaic or distractingly ungrammatical.
+- Vary sentence length and openings because the thought changes, not for decoration. Let some sentences stay plain.
+- Prefer the specific nouns and verbs the facts supply over abstract praise or claims about passion.
+- Check the whole text against the formula habits in [pattern-audit.md](pattern-audit.md) before returning it.
+- Do not add errors, slang, invented anecdotes or quirks to seem human, and do not promise any detector result.
+
 ## Named-person requests
 
 Do not claim to write exactly like a living writer, public figure, teacher, classmate, or other identifiable person. Translate the request into broad traits such as compressed sentences, dry humour, concrete observation, measured argument, or restrained conclusions.
