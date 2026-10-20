@@ -62,6 +62,12 @@ Some habits recur in heavily templated prose, including much model-generated wri
 | Promotional superlatives about organisations | "China's No.1 firm", "a globally leading group" | Name the organisation and what the writer did there; keep a ranking only if it is verified and relevant |
 | Triad stacking | several three-item lists in one paragraph | Keep the lists that carry information; split or shorten the rest |
 | Punctuation the writer does not use | em dashes in a writer's prose that otherwise has none | Follow the writer's or user's punctuation habits |
+| Balanced "both" summaries | "..., understanding both the emissions behind the figures and the finance that responds to them" | Say plainly what the writer needs to learn or do |
+| Transformation lines | "This research turned sustainability from a general concern into a field I could study closely." | Cut it, or say what actually changed |
+| Paragraph-closing maxims | "...and I think a reported tonne of carbon dioxide deserves the same treatment." | State the link as a plain claim, or end on the last fact |
+| Concession pivots | "Still, while I can analyse X, I am not yet able to Y." | Say what the writer can do and what they cannot do yet, plainly |
+| Course-by-course benefit matching | every course named with its own neat benefit: "would give me...", "would build on...", "would take..." | Lead with the one or two courses that matter most and why; group the rest briefly |
+| Thesis-echo endings | "...and that combination is what my training so far has been missing." | End on a plain reason in the writer's own terms |
 
 When tools are available, measure before claiming a repair worked: count the repeated phrases above, and report the sentence-length range, mean and spread for the scope checked. Report the counts as descriptive, not as evidence of authorship.
 

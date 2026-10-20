@@ -8,6 +8,7 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) an
 
 ### Added
 
+- Six more formula habits (balanced "both" summaries, transformation lines, paragraph-closing maxims, concession pivots, course-by-course benefit matching, thesis-echo endings), a "Formula shapes" check in `check_statement.py`, and a workflow rule to repair flagged sentences in the student's voice rather than hand them back.
 - Pattern audit and repair mode for recurring statistical or structural prose patterns, with descriptive-count and detector-evasion safeguards.
 - Evidence ledger and citation audit mode for source-bounded claims, quotations, numbers, metadata and support gaps.
 - Rubric-aware review with criterion-level evidence mapping and prioritised revision actions.

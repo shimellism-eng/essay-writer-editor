@@ -59,6 +59,12 @@ INSIGHT = re.compile(
     r"understood|learned|learnt)\b",
     re.IGNORECASE,
 )
+FORMULA_SHAPES = re.compile(
+    r",\s+\w+ing both\b|\bturned [\w\s-]{2,40}? from (?:an? )?[\w\s-]{2,40}? into\b|"
+    r"\bdeserves? the same\b|^(?:Still|Yet|However),? while\b|"
+    r"\bis what my [\w\s]{2,40}?(?:has been|is|was) (?:missing|lacking)\b",
+    re.IGNORECASE,
+)
 SENTENCE_SPLIT = re.compile(r"(?<=[.?!])[\"”']?\s+(?=[A-Z\"“(])")
 NAME_RUN = re.compile(
     r"\b(?:[A-Z][\w&().'-]*|of|and|the|for|de)"
@@ -159,6 +165,8 @@ def check(draft: str, limit: tuple[int, int] | None, sources: list[str]) -> Repo
     report.add("FAIL" if reveals else "PASS", "Colon reveals", short_list(reveals) if reveals else "none")
     mottos = [s for s in all_sentences if MOTTO.search(s)]
     report.add("WARN" if mottos else "PASS", "Motto sentences", short_list(mottos, 2) if mottos else "none")
+    shapes = [s for s in all_sentences if FORMULA_SHAPES.search(s)]
+    report.add("WARN" if shapes else "PASS", "Formula shapes", short_list(shapes, 3) if shapes else "none")
     reflective = [m.group(0) for m in REFLECTIVE.finditer(draft)]
     report.add("WARN" if len(reflective) > 3 else "PASS", "Reflective verbs", f"{len(reflective)} (review above 3)")
     insight = [m.group(0) for m in INSIGHT.finditer(draft)]
