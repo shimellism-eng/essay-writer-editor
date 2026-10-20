@@ -4,7 +4,8 @@
 Usage:
     python3 make_docx.py STATEMENT.txt OUTPUT.docx [--title TEXT] [--subtitle TEXT]
 
-Paragraphs in STATEMENT.txt are separated by blank lines. The file uses
+Paragraphs in STATEMENT.txt are separated by blank lines. A paragraph that starts with "## "
+is set as a bold, left-aligned heading, for example an application question. The file uses
 Times New Roman 12 pt, justified paragraphs and an optional centred title.
 It is built from scratch with the standard library, so it carries no author,
 company, software or editing-history metadata.
@@ -67,7 +68,8 @@ def build(paragraphs: list[str], title: str | None, subtitle: str | None) -> str
         body.append(paragraph(title, "center", bold=True, size=28, after=60))
     if subtitle:
         body.append(paragraph(subtitle, "center", after=280))
-    body += [paragraph(p) for p in paragraphs]
+    body += [paragraph(p[3:], "left", bold=True, after=120) if p.startswith("## ") else paragraph(p)
+             for p in paragraphs]
     section = ('<w:sectPr><w:pgSz w:w="11906" w:h="16838"/>'
                '<w:pgMar w:top="1440" w:right="1440" w:bottom="1440" w:left="1440" '
                'w:header="708" w:footer="708" w:gutter="0"/></w:sectPr>')
@@ -96,7 +98,7 @@ def main() -> None:
             info = zipfile.ZipInfo(name, date_time=fixed_time)
             info.compress_type = zipfile.ZIP_DEFLATED
             docx.writestr(info, data)
-    words = len(re.findall(r"[A-Za-z0-9'’-]+", " ".join(paragraphs)))
+    words = len(re.findall(r"[A-Za-z0-9'’-]+", " ".join(p for p in paragraphs if not p.startswith("## "))))
     print(f"Wrote {args.output} ({len(paragraphs)} paragraphs, {words} words, no metadata)")
 
 
