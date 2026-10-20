@@ -4,6 +4,8 @@ Use the mode that matches the deliverable. Apply the shared rules for evidence, 
 
 ## Personal statement
 
+Follow [personal-statement-workflow.md](personal-statement-workflow.md) end to end.
+
 Build around supported choices, experiences, values, and reflection. Prefer one consequential example over a résumé in paragraph form. Use only experiences the writer supplied. Do not manufacture hardship, trauma, motivation, leadership, growth, or a future plan. Keep the writer's actual voice and explain reflection through specific decisions rather than generic virtue.
 
 Return a clear throughline: context, choice or action, what the writer learned or questioned, and why it matters to the stated application. Mark a missing personal detail instead of filling it.
