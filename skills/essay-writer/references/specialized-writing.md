@@ -8,6 +8,10 @@ Build around supported choices, experiences, values, and reflection. Prefer one 
 
 Return a clear throughline: context, choice or action, what the writer learned or questioned, and why it matters to the stated application. Mark a missing personal detail instead of filling it.
 
+### Adapting a statement for another programme
+
+When the user supplies an existing statement and a target programme, use only two sources: the supplied statement and the programme's official pages. Keep every grade, award, title, organisation and duty as the statement gives it. Do not upgrade a stated goal to fit the new programme (for example, "ESG assurance" must not become "ESG and carbon assurance") and do not add outside facts about the writer, even true ones. Take course names, required components, internships and other programme details from the official pages, and name them exactly. Leave out a detail whose meaning is unclear rather than guessing it, and ask the user about it. Bridging sentences that connect the writer's experience to the new field are allowed, but keep them few and tell the user which sentences they are. Before returning, list for the user each detail removed, each item left unresolved and each bridge added.
+
 ## Scholarship essay
 
 Answer the actual selection criteria: fit, contribution, goals, need, community, achievement, or other supplied requirements. Separate evidence of achievement from aspiration. Never invent financial hardship, family circumstances, service, awards, impact, or institutional knowledge. Make the case specific without turning the essay into promotional language.
