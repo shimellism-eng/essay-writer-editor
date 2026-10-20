@@ -74,6 +74,18 @@ If the user owns the sample and wants continuity with their own writing, retain 
 - Match the writer's appetite for explanation; do not over-explain an implication the reader can carry.
 - Keep short material short.
 
+## Cut to a word limit
+
+When the user asks for a shorter version or a target range, cut in this order and stop once the target is reached:
+
+1. **Repeated points.** A point made more than once survives once, in the place where it does the most work. Personal statements often repeat "what I still need to learn" or "why this programme" in several paragraphs.
+2. **Restatements.** Remove "or put simply", "in other words" and any sentence that explains the previous one again.
+3. **Detail the reader does not need.** Remove procedural descriptions, method names, collaborator lists and similar background before touching evidence that carries the case.
+4. **Overlapping sentences.** When two sentences cover the same ground, keep the more specific one, or the writer's own if both are equally specific.
+5. **List-like sentences.** Combine runs of short items, such as activities, roles or placements, into fewer sentences.
+
+Do not cut or change a grade, number, title, award, role, organisation or other fact that supports the case unless the user agrees; if the target cannot be reached otherwise, say what would have to go. Compression often creates new formula habits, such as colon reveals, so re-check the text against [pattern-audit.md](pattern-audit.md) afterwards. Report the word count before and after, the kinds of material cut, and confirm that no facts were lost. Keep the previous version available.
+
 ## Adapt for accessibility
 
 When the user asks for plain language or a broad audience:

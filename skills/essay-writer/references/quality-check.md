@@ -98,7 +98,8 @@ For personal statements, scholarship essays, lab reports, and literature reviews
 - lab measurements preserve units and uncertainty, and literature reviews distinguish synthesis from source claims;
 - missing personal details, readings, sources, or search scope are marked rather than invented.
 - an adapted statement uses only the supplied statement and the programme's official information, with removed details, unresolved items and bridging sentences listed for the user.
-- the result reads in a natural human voice throughout, whether it was written from a draft or from facts alone.
+- the result reads in a natural human voice throughout, whether it was written from a draft or from facts alone;
+- a shortened version removed repetition and restatement before evidence, kept every supporting fact, and reports the word count before and after.
 
 ## Regression scenarios
 

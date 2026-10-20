@@ -16,6 +16,7 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) an
 - Formula-habit checklist for pattern repair (repeated reflective verbs, motto sentences, set-up sentences, colon reveals, stock vocabulary, promotional superlatives, triad stacking) with measure-before-claiming guidance.
 - Rules for adapting a personal statement to a new programme using only the supplied statement and official programme information.
 - Natural human voice by default for every draft and revision, including writing from facts alone; adapted statements reuse the writer's sentences only where they already read naturally.
+- Ordered method for cutting to a word limit that removes repetition first, protects supporting facts, and reports before-and-after counts.
 
 ### Planned
 
