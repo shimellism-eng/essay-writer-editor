@@ -49,7 +49,7 @@ Do not present a descriptive count as a statistical test. Avoid claims such as â
 
 ## Formula habits worth checking
 
-Some habits recur in heavily templated prose, including much model-generated writing. Check for them in every pattern repair and before returning a public-facing draft such as a personal statement. Repair them because they read as formula and weaken the writer's voice, not to evade a detector. Keep any instance the writer clearly chose.
+Some habits recur in heavily templated prose, including much model-generated writing. Check for them in every pattern repair and before returning a public-facing draft such as a personal statement. Repair them because they read as formula and weaken the writer's voice, not to evade a detector. Keep any instance the writer clearly chose, including stock phrases inside sentences the writer wrote, unless they block meaning. Apply the table mainly to sentences you added or rewrote.
 
 | Habit | Example | Usual repair |
 |---|---|---|
