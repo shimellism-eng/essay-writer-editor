@@ -79,7 +79,7 @@ Make each paragraph perform a useful job: frame, claim, evidence, analysis, coun
 
 ### 5. Draft or revise
 
-Write with specific supported detail, varied rhythm, clear logical movement, and enough restraint to trust the reader. Keep terminology and qualifications that carry real meaning. Use first person only when the user's material supports it.
+Write with specific supported detail, varied rhythm, clear logical movement, and enough restraint to trust the reader. Keep terminology and qualifications that carry real meaning. Use first person only when the user's material supports it. Write in a natural human voice by default, including when only facts are supplied; see [references/voice-and-editing.md](references/voice-and-editing.md).
 
 ### 6. Verify
 

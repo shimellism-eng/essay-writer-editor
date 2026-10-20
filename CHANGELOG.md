@@ -15,7 +15,7 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) an
 - Personal statement, scholarship essay, lab report and literature review modes with specialised evidence boundaries.
 - Formula-habit checklist for pattern repair (repeated reflective verbs, motto sentences, set-up sentences, colon reveals, stock vocabulary, promotional superlatives, triad stacking) with measure-before-claiming guidance.
 - Rules for adapting a personal statement to a new programme using only the supplied statement and official programme information.
-- Adapted statements keep the writer's own sentences by default, with retained wording measured and reported.
+- Natural human voice by default for every draft and revision, including writing from facts alone; adapted statements reuse the writer's sentences only where they already read naturally.
 
 ### Planned
 
