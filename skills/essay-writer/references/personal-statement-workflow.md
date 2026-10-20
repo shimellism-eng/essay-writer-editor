@@ -58,6 +58,8 @@ python3 scripts/check_statement.py draft.txt --limit 800-900 --source writer-mat
 
 The script is in this skill's `scripts` folder. Fix every FAIL. Review every WARN: fix it when it is a real habit or an untraced fact, and leave it when it is a proper name, a course title, or a sentence that carries content. Run the checker again until nothing fails. Then read the whole statement once more against the formula habits in [pattern-audit.md](pattern-audit.md), since a script cannot judge every sentence.
 
+Repair every formula habit you find yourself, writing as the student would: plain, specific sentences built only from the locked facts. Do not hand a list of flagged sentences back to the user or the student as homework. Keep the student's own sentences from the source where they read naturally. If a better sentence would need a detail the sources do not give, write the plain version and list the question in the reply.
+
 ## 8. Deliver
 
 Create the Word file:
