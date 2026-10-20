@@ -17,6 +17,9 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) an
 - Rules for adapting a personal statement to a new programme using only the supplied statement and official programme information.
 - Natural human voice by default for every draft and revision, including writing from facts alone; adapted statements reuse the writer's sentences only where they already read naturally.
 - Ordered method for cutting to a word limit that removes repetition first, protects supporting facts, and reports before-and-after counts.
+- End-to-end personal statement workflow: input defaults, fact lock, official programme research, drafting, cutting, checking and delivery.
+- `scripts/check_statement.py`: pass/fail checks for word count, em dashes, stock vocabulary, superlatives, colon reveals, motto and set-up sentences, rhythm, repetition, and facts that do not trace to the supplied sources.
+- `scripts/make_docx.py`: builds a clean Word file with no author or software metadata.
 
 ### Planned
 

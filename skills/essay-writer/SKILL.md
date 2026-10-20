@@ -57,6 +57,7 @@ Use the specialised writing modes when the requested deliverable is a personal s
 - Read [references/rubric-review.md](references/rubric-review.md) when a Review request includes a rubric or asks for prioritised criterion-by-criterion feedback.
 - Read [references/revision-history.md](references/revision-history.md) when the user asks what changed, why it changed, or for a revision log.
 - Read [references/specialized-writing.md](references/specialized-writing.md) for personal statements, scholarship essays, lab reports, and literature reviews.
+- For any personal statement, follow [references/personal-statement-workflow.md](references/personal-statement-workflow.md) end to end, including the checker in `scripts/check_statement.py` and the Word file from `scripts/make_docx.py`.
 - Apply [references/quality-check.md](references/quality-check.md) after a complete draft, deep edit, public-facing essay, or behavioural evaluation.
 
 ## Common workflow
