@@ -17,6 +17,8 @@ Optional, with defaults:
 
 Ask only for a required input that is missing. Proceed on the defaults otherwise.
 
+**Question-based applications.** Some applications ask several short questions instead of one statement, each with its own limit. Answer each question directly in its first sentence. Give each answer its own job so the same fact, lesson or course is not repeated across answers; one answer may point to another instead. Save each answer as its own file and run the checker on each with that question's limit. For the Word file, put the answers in one text file with each question as a line starting with `## `.
+
 ## 2. Lock the facts
 
 Before drafting, save the writer's material as plain text. Every grade, score, rank, date, paper title, organisation, role, award and stated goal in the final statement must come from it. Keep stated goals exactly as written; do not upgrade them to suit the new programme. Leave out a detail whose meaning is unclear rather than guessing, and mention it to the user in one line.
