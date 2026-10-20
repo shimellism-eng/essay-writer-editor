@@ -47,6 +47,24 @@ When tools are available, simple descriptive measures can support an observation
 
 Do not present a descriptive count as a statistical test. Avoid claims such as “this proves AI,” “this is outside the human distribution,” or “the text has a 78% AI probability.” If no calculation was performed, use wording such as “many paragraphs begin with the same transition” rather than a made-up percentage.
 
+## Formula habits worth checking
+
+Some habits recur in heavily templated prose, including much model-generated writing. Check for them in every pattern repair and before returning a public-facing draft such as a personal statement. Repair them because they read as formula and weaken the writer's voice, not to evade a detector. Keep any instance the writer clearly chose.
+
+| Habit | Example | Usual repair |
+|---|---|---|
+| Repeated reflective verbs | "showed me", "taught me", "made me realise" several times in one piece | Keep the writer's own instances; recast the rest as what the writer did or concluded |
+| Stacked insight openers | "I came to see", "I now see", "I believe", "I expect" in close succession | Keep one or two; state the remaining points directly |
+| Motto sentences | "A figure is only as reliable as the evidence behind it." | Restate as a plain claim tied to the writer's own experience |
+| Short dramatic set-up sentences | "It also showed me a limit." "Carbon is the clearest test of that idea." | Merge into the sentence that carries the content |
+| Colon reveals | "kept bringing me back to one principle: ..." | Say the point without the build-up |
+| Stock vocabulary | "passion", "delve", "pivotal", "invaluable", "perfectly aligns", "moreover", "furthermore", "tapestry", "in today's world" | Use the plainer word, or cut the phrase if it adds nothing |
+| Promotional superlatives about organisations | "China's No.1 firm", "a globally leading group" | Name the organisation and what the writer did there; keep a ranking only if it is verified and relevant |
+| Triad stacking | several three-item lists in one paragraph | Keep the lists that carry information; split or shorten the rest |
+| Punctuation the writer does not use | em dashes in a writer's prose that otherwise has none | Follow the writer's or user's punctuation habits |
+
+When tools are available, measure before claiming a repair worked: count the repeated phrases above, and report the sentence-length range, mean and spread for the scope checked. Report the counts as descriptive, not as evidence of authorship.
+
 ## Repair for meaning
 
 Make the smallest effective change:

@@ -67,6 +67,7 @@ For a pattern audit or repair, confirm that:
 - local recurrence is not inflated into statistical significance or authorship proof;
 - counterexamples and ordinary genre, translation, accessibility, technical, or collaboration explanations are considered;
 - the repair improves meaning, rhythm, specificity, or voice rather than targeting a detector;
+- the formula habits listed in pattern-audit.md were checked and, where tools allowed, counted;
 - quotations, citations, numbers, uncertainty, dialect, and purposeful repetition remain intact.
 
 ## Evidence and citation audit
@@ -96,6 +97,7 @@ For personal statements, scholarship essays, lab reports, and literature reviews
 - the structure fits the deliverable rather than forcing a generic five-paragraph essay;
 - lab measurements preserve units and uncertainty, and literature reviews distinguish synthesis from source claims;
 - missing personal details, readings, sources, or search scope are marked rather than invented.
+- an adapted statement uses only the supplied statement and the programme's official information, with removed details, unresolved items and bridging sentences listed for the user.
 
 ## Regression scenarios
 

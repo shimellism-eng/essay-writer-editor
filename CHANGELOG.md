@@ -13,6 +13,8 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) an
 - Rubric-aware review with criterion-level evidence mapping and prioritised revision actions.
 - Optional revision histories that describe observable material changes without exposing hidden reasoning.
 - Personal statement, scholarship essay, lab report and literature review modes with specialised evidence boundaries.
+- Formula-habit checklist for pattern repair (repeated reflective verbs, motto sentences, set-up sentences, colon reveals, stock vocabulary, promotional superlatives, triad stacking) with measure-before-claiming guidance.
+- Rules for adapting a personal statement to a new programme using only the supplied statement and official programme information.
 
 ### Planned
 
